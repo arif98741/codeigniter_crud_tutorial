@@ -6,16 +6,13 @@ class Welcome extends CI_Controller {
 	
 	public function index()
 	{
-		echo 'homepage';
-		//$this->load->view('welcome_message');
-	}
-
-
-	public function blog()
-	{
-		echo 'blog page';
 		
 	}
 
+
+	public function home()
+	{
+		$this->load->view("welcome_message");
+	}
 	
 }
