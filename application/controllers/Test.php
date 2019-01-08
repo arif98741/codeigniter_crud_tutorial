@@ -1,19 +1,19 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Test extends CI_Controller {
 
 	
 	public function index()
 	{
-		echo 'homepage';
+		echo 'test homepage';
 		//$this->load->view('welcome_message');
 	}
 
 
-	public function blog()
+	public function testblog()
 	{
-		echo 'blog page';
+		echo 'test blog page';
 		
 	}
 

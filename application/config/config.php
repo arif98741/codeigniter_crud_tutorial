@@ -8,7 +8,7 @@ $base_url .= "://". @$_SERVER['HTTP_HOST'];
 $base_url .=     str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 $config['base_url'] = $base_url;
 
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 $config['uri_protocol']	= 'REQUEST_URI';
 
