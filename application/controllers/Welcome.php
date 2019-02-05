@@ -7,12 +7,15 @@ class Welcome extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('studentmodel');
+        $this->load->model('usermodel');
+        
         
     }
 
-    public function model_work()
+    public function data()
     {
-    	$this->studentmodel->test_method();
+
+    	$this->usermodel->get_data();
     }
 
     

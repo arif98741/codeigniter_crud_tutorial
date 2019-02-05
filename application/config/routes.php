@@ -10,7 +10,7 @@ $route['default_controller'] = 'test';
 */
 
 $route['home'] = 'welcome/home';
-$route['model_work'] = 'welcome/model_work';
+$route['data_work'] = 'welcome/data';
 
 
 
