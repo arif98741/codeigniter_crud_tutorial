@@ -13,7 +13,6 @@ class Test extends CI_Controller {
 
 	public function testblog()
 	{
-		echo 'test blog page';
 		
 	}
 
