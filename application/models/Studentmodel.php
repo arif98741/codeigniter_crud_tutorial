@@ -6,12 +6,15 @@
 	    public function __construct()
 	    {
 	    	parent::__construct();
+	    	$this->db = $this->load->database('default',TRUE); 
 	    	
 	    }
 
 	    public function test_method()
 	    {
-	    	echo 'yes';
+	    	$data = $this->db->get('something');
+	    	echo '<pre>';
+	    	print_r($data->result_array()); 
 	    }
 	}
 ?>

@@ -7,17 +7,9 @@
 	    public function __construct()
 	    {
 	        parent::__construct();
+	        
 	    }
 
-	    public function abc()
-	    {
-	    	echo "I am from abc method";
-	    }
-
-	    public function def()
-	    {
-	    	echo "I am from def method";
-	    }
 
 	    
 	}

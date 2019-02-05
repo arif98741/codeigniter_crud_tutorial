@@ -6,17 +6,15 @@ class Welcome extends CI_Controller{
 	public function __construct()
     {
         parent::__construct();
-        $this->db = $this->load->database("default",TRUE);
-        //$this->load->model('studentmodel');
+        $this->load->model('studentmodel');
+        
     }
+
+    public function model_work()
+    {
+    	$this->studentmodel->test_method();
+    }
+
+    
 	
-	public function model_work()
-	{
-
-		$this->load->model('testmodel');
-		$this->testmodel->def();
-
-	}
-
-
 }
