@@ -8,14 +8,26 @@ class Welcome extends CI_Controller{
         parent::__construct();
         $this->load->model('studentmodel');
         $this->load->model('usermodel');
-        
-        
+                
     }
 
-    public function data()
+    public function session_method()
     {
 
-    	$this->usermodel->get_data();
+        echo base_url(); die;
+        /*$this->session->set_userdata(array(
+
+            'userid' => 1,
+            'token'   => 'fghjdfd45678dfdsf'
+        ));*/
+
+        ///$this->session->sess_destroy();
+
+        //echo $this->session->useriddfddsfsd; die;
+       
+        
+        echo "<pre>";
+        print_r($this->session); 
     }
 
     
