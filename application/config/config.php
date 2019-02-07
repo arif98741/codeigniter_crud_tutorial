@@ -69,7 +69,7 @@ $config['encryption_key'] = '';
 
 
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'sdfsdfdsfsdf';
+$config['sess_cookie_name'] = 'ryfu_ex&56';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;

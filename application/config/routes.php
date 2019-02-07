@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'test';
+$route['default_controller'] = 'home';
 
 /*
 !------------------------------------
@@ -9,9 +9,6 @@ $route['default_controller'] = 'test';
 !------------------------------------
 */
 
-$route['home'] = 'welcome/home';
-$route['data_work'] = 'welcome/data';
-$route['session_work'] = 'welcome/session_method';
 
 
 $route['404_override'] = '';
