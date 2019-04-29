@@ -15,5 +15,29 @@ class Home extends CI_Controller {
 		$this->load->view('project/login.php');
 	}
 
+	/*
+	!---------------------------------
+	! Login Action Method
+	!---------------------------------
+	*/ 
+	public function login_action()
+	{
+		//echo "<pre>";
+		//print_r($_POST);
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		
+
+		$this->load->model('loginmodel');
+		$logindata = $this->loginmodel->loginmethod($username,$password);
+		$row = $logindata->result_id->num_rows;
+		if ($row > 0) {
+			echo "success";
+		}else{
+			echo 'failed';
+		}
+
+	}
+
 	
 }

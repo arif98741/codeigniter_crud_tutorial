@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+<title>Login CRUD</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -269,19 +269,18 @@ $(document).ready(function(){
             </div>
             <br>
             <div class="table-title">
-            	<?php  echo form_open('',array()); ?>
+            	<?php  echo form_open(base_url().'login_action',array()); ?>
             	
 				<label for="">User Name</label>
-				<input type="text" class="form-control" style="color: #000; font-size: 18px;">
+				<input type="text" name="username" class="form-control" style="color: #000; font-size: 18px;">
 
 				<label for="">Password</label>
-				<input type="password" class="form-control" style="color: #000; font-size: 18px;"><br>
+				<input type="password" name="password" class="form-control" style="color: #000; font-size: 18px;"><br>
 
 				<button type="submit" style="color: green;">Login</button>&nbsp;
 				<button onclick="window.location='registration.html'" style="color: green;">Register</button>
 
 			<?php echo form_close(); ?>
-
             </div>
             
         </div>
