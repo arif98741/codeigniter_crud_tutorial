@@ -10,13 +10,10 @@ class Home extends CI_Controller {
 		$this->db = $this->load->database('default',TRUE);
 	}
 
-
 	public function index()
 	{
 		$this->load->view('project/login.php');
 	}
 
-
 	
-
 }
